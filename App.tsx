@@ -79,7 +79,7 @@ const SectionHeading: React.FC<{
 );
 
 const App: React.FC = () => {
-  const CHECKOUT_URL = "https://payfast.greenn.com.br/153513";
+  const CHECKOUT_URL = "https://payfast.greenn.com.br/redirect/265907";
 
   const handleScrollToOffer = () => {
     const element = document.getElementById('offer');
