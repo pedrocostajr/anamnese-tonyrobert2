@@ -287,7 +287,8 @@ const App: React.FC = () => {
             {[
               { image: "https://tonyrobert.com.br/wp-content/uploads/2026/02/Gemini_Generated_Image_zh6xxkzh6xxkzh6x.png", t: "Ficha de Anamnese em PDF", d: "Modelo pronto para imprimir ou enviar para o seu paciente preencher online." },
               { icon: <BookOpen />, t: "Arquivo Word Editável", d: "Personalize com sua logo, cores e dados profissionais." },
-              { image: "https://tonyrobert.com.br/wp-content/uploads/2026/02/Gemini_Generated_Image_69nhbi69nhbi69nh-scaled.png", t: "Por dentro da plataforma", d: "Comando exclusivo para analisar respostas e identificar dores ocultas com IA." },
+              { image: "/ai-prompt.png", t: "Prompt Estratégico de IA", d: "Comando exclusivo para analisar respostas e identificar dores ocultas com IA." },
+              { image: "https://tonyrobert.com.br/wp-content/uploads/2026/02/Gemini_Generated_Image_69nhbi69nhbi69nh-scaled.png", t: "Por dentro da plataforma", d: "Acesso completo à nossa área de membros exclusiva e organizada." },
               { image: "https://tonyrobert.com.br/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-20-at-10.49.41.jpeg", t: "Aula de Boas Vindas", d: "Vídeo-aula ensinando como usar cada pergunta para extrair o melhor da terapia." },
               { icon: <ShieldCheck />, t: "Masterclass: Integração com TCC", d: "Como conectar a anamnese cristã com a Terapia Cognitivo Comportamental." },
               { icon: <Users />, t: "Guia de Consulta Rápida", d: "PDF complementar com dicas de ouro para facilitar seus estudos e sessões." }
