@@ -1,14 +1,14 @@
 
 import React from 'react';
-import { 
-  CheckCircle2, 
-  XCircle, 
-  ArrowRight, 
-  FileText, 
-  Video, 
-  Bot, 
-  Users, 
-  ShieldCheck, 
+import {
+  CheckCircle2,
+  XCircle,
+  ArrowRight,
+  FileText,
+  Video,
+  Bot,
+  Users,
+  ShieldCheck,
   BookOpen,
   Sparkles,
   Quote,
@@ -20,21 +20,21 @@ import {
 } from 'lucide-react';
 
 // Reusable Components
-const Button: React.FC<{ 
-  children: React.ReactNode; 
-  className?: string; 
+const Button: React.FC<{
+  children: React.ReactNode;
+  className?: string;
   onClick?: () => void;
   href?: string;
   variant?: 'primary' | 'secondary' | 'accent';
 }> = ({ children, className = '', onClick, href, variant = 'primary' }) => {
   const baseStyles = "px-8 py-4 rounded-2xl font-bold transition-all duration-500 transform hover:scale-[1.03] active:scale-95 shadow-xl flex items-center justify-center gap-3 text-lg inline-flex cursor-pointer overflow-hidden relative group";
-  
+
   const variants = {
     primary: "bg-amber-600 hover:bg-amber-500 text-white shadow-amber-200",
     secondary: "bg-sky-700 hover:bg-sky-600 text-white shadow-sky-200",
     accent: "bg-white text-sky-900 border border-sky-100 hover:bg-sky-50 shadow-none"
   };
-  
+
   const combinedClasses = `${baseStyles} ${variants[variant]} ${className}`;
 
   const content = (
@@ -59,9 +59,9 @@ const Button: React.FC<{
   );
 };
 
-const SectionHeading: React.FC<{ 
-  title: string; 
-  subtitle?: string; 
+const SectionHeading: React.FC<{
+  title: string;
+  subtitle?: string;
   light?: boolean;
   centered?: boolean;
 }> = ({ title, subtitle, light = false, centered = true }) => (
@@ -99,7 +99,7 @@ const App: React.FC = () => {
               <span className="font-extrabold text-slate-800 tracking-tighter text-xl">Anamnese Cristã</span>
             </div>
             <div className="flex items-center gap-6">
-              <button 
+              <button
                 onClick={handleScrollToOffer}
                 className="text-slate-600 font-bold hover:text-sky-600 transition-colors hidden md:block text-sm uppercase tracking-widest"
               >
@@ -124,11 +124,11 @@ const App: React.FC = () => {
               <Zap className="w-4 h-4" />
               Upgrade Profissional Imediato
             </div>
-            
+
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-slate-950 leading-[1.1] tracking-tighter">
               Receba o Modelo Pronto de <span className="text-sky-700 italic">Anamnese Cristã</span> em PDF + Word com Perguntas Estratégicas e Prompt de IA
             </h1>
-            
+
             <p className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-medium">
               A estrutura completa para terapeutas e conselheiros que desejam realizar atendimentos profundos, organizados e biblicamente alinhados, economizando horas de preparação.
             </p>
@@ -137,9 +137,9 @@ const App: React.FC = () => {
             <div className="mt-8 relative group max-w-4xl mx-auto">
               <div className="absolute -inset-4 bg-gradient-to-r from-sky-500 to-amber-500 rounded-[2.5rem] blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-700"></div>
               <div className="relative overflow-hidden rounded-[2rem] border-[12px] border-white shadow-2xl">
-                 <img 
-                  src="https://tonyrobert.com.br/wp-content/uploads/2026/02/unnamed-1.jpg" 
-                  alt="Kit Anamnese Cristã Profissional" 
+                <img
+                  src="https://tonyrobert.com.br/wp-content/uploads/2026/02/unnamed-1.jpg"
+                  alt="Kit Anamnese Cristã Profissional"
                   className="w-full h-auto object-cover transform group-hover:scale-[1.01] transition-transform duration-1000"
                 />
               </div>
@@ -163,13 +163,13 @@ const App: React.FC = () => {
       </header>
 
       {/* Pain Points Section - pt-6 to reduce gap from hero */}
-      <section className="pt-6 pb-20 px-4 bg-white relative">
+      <section className="pt-6 pb-20 px-4 bg-sky-50 relative">
         <div className="container mx-auto max-w-5xl">
-          <SectionHeading 
+          <SectionHeading
             title="Você já sentiu que falta algo em seus atendimentos?"
             subtitle="A falta de uma estrutura clara é o que separa um atendimento amador de uma terapia transformadora."
           />
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             {[
               "Já travou durante um atendimento por não saber qual pergunta fazer em seguida?",
@@ -194,12 +194,12 @@ const App: React.FC = () => {
       <section className="py-20 px-4 bg-slate-950 text-white overflow-hidden relative">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-sky-500/10 blur-[150px] rounded-full -z-0"></div>
         <div className="container mx-auto max-w-6xl relative z-10">
-          <SectionHeading 
+          <SectionHeading
             title="Resultados Práticos no Seu Consultório"
             subtitle="Transforme sua investigação inicial em um mapa de cura preciso e organizado."
             light
           />
-          
+
           <div className="grid md:grid-cols-3 gap-10">
             {[
               {
@@ -239,9 +239,9 @@ const App: React.FC = () => {
             <div className="md:w-[45%] relative">
               <div className="absolute -inset-10 bg-sky-200/30 rounded-full blur-[80px] -z-10"></div>
               <div className="relative rounded-[2rem] overflow-hidden shadow-2xl rotate-1 group">
-                <img 
-                  src="https://www.terapiacristatms.com.br/assets/tony-robert-CrFkOKSK.png" 
-                  alt="Tony Robert" 
+                <img
+                  src="https://www.terapiacristatms.com.br/assets/tony-robert-CrFkOKSK.png"
+                  alt="Tony Robert"
                   className="w-full h-auto drop-shadow-2xl group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
@@ -276,37 +276,73 @@ const App: React.FC = () => {
       </section>
 
       {/* Product Content (Deliverables) */}
-      <section className="py-20 px-4 bg-[#F8FAFC]">
+      <section className="py-20 px-4 bg-sky-50">
         <div className="container mx-auto max-w-6xl">
-          <SectionHeading 
+          <SectionHeading
             title="Tudo o que você recebe hoje"
             subtitle="Por apenas R$17, você terá acesso imediato a um kit completo de ferramentas."
           />
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { icon: <FileText />, t: "Ficha de Anamnese em PDF", d: "Modelo pronto para imprimir ou enviar para o seu paciente preencher online." },
+              { image: "https://tonyrobert.com.br/wp-content/uploads/2026/02/Gemini_Generated_Image_zh6xxkzh6xxkzh6x.png", t: "Ficha de Anamnese em PDF", d: "Modelo pronto para imprimir ou enviar para o seu paciente preencher online." },
               { icon: <BookOpen />, t: "Arquivo Word Editável", d: "Personalize com sua logo, cores e dados profissionais." },
-              { icon: <Bot />, t: "Prompt Estratégico de IA", d: "Comando exclusivo para analisar respostas e identificar dores ocultas." },
-              { icon: <Video />, t: "Aula de Aplicação Prática", d: "Vídeo-aula ensinando como usar cada pergunta para extrair o melhor da terapia." },
+              { image: "https://tonyrobert.com.br/wp-content/uploads/2026/02/Gemini_Generated_Image_69nhbi69nhbi69nh-scaled.png", t: "Por dentro da plataforma", d: "Comando exclusivo para analisar respostas e identificar dores ocultas com IA." },
+              { image: "https://tonyrobert.com.br/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-20-at-10.49.41.jpeg", t: "Aula de Boas Vindas", d: "Vídeo-aula ensinando como usar cada pergunta para extrair o melhor da terapia." },
               { icon: <ShieldCheck />, t: "Masterclass: Integração com TCC", d: "Como conectar a anamnese cristã com a Terapia Cognitivo Comportamental." },
               { icon: <Users />, t: "Guia de Consulta Rápida", d: "PDF complementar com dicas de ouro para facilitar seus estudos e sessões." }
             ].map((item, i) => (
-              <div key={i} className="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500 group">
-                <div className="bg-sky-50 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-600 transition-colors duration-500">
-                  {React.cloneElement(item.icon as React.ReactElement<any>, { className: "w-6 h-6 text-sky-600 group-hover:text-white transition-colors duration-500" })}
+              <div key={i} className="bg-white overflow-hidden rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500 group">
+                {item.image ? (
+                  <div className="h-48 overflow-hidden">
+                    <img src={item.image} alt={item.t} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  </div>
+                ) : (
+                  <div className="p-8 pb-0">
+                    <div className="bg-sky-50 w-14 h-14 rounded-2xl flex items-center justify-center group-hover:bg-sky-600 transition-colors duration-500">
+                      {React.cloneElement(item.icon as React.ReactElement<any>, { className: "w-6 h-6 text-sky-600 group-hover:text-white transition-colors duration-500" })}
+                    </div>
+                  </div>
+                )}
+                <div className="p-8">
+                  <h4 className="text-xl font-extrabold text-slate-900 mb-2 tracking-tight">{item.t}</h4>
+                  <p className="text-slate-500 font-medium text-sm leading-relaxed">{item.d}</p>
                 </div>
-                <h4 className="text-xl font-extrabold text-slate-900 mb-2 tracking-tight">{item.t}</h4>
-                <p className="text-slate-500 font-medium text-sm leading-relaxed">{item.d}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* Social Proof Section */}
+      <section className="py-20 px-4 bg-white relative">
+        <div className="container mx-auto max-w-6xl">
+          <SectionHeading
+            title="O que estão falando sobre a Anamnese Cristã"
+            subtitle="Resultados reais de quem já aplicou a ferramenta."
+          />
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl border border-slate-100">
+              <img
+                src="https://tonyrobert.com.br/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-20-at-10.41.35-1.jpeg"
+                alt="Depoimento 1"
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl border border-slate-100">
+              <img
+                src="https://tonyrobert.com.br/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-20-at-10.41.35.jpeg"
+                alt="Depoimento 2"
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Final Offer Section */}
-      <section id="offer" className="py-20 px-4 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-full bg-grid opacity-40 -z-10"></div>
+      <section id="offer" className="py-20 px-4 bg-sky-50 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-full bg-grid opacity-20 -z-10"></div>
         <div className="container mx-auto max-w-4xl">
           <div className="bg-white rounded-[3.5rem] shadow-[0_50px_100px_-20px_rgba(0,0,0,0.1)] border border-slate-100 overflow-hidden">
             <div className="flex flex-col lg:flex-row">
@@ -367,15 +403,15 @@ const App: React.FC = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-8 px-8 py-10 glass rounded-[2.5rem] border-sky-100">
-             <div className="bg-amber-500 p-5 rounded-3xl shadow-xl shadow-amber-200">
-                <ShieldCheck className="w-10 h-10 text-white" />
-             </div>
-             <div className="text-center md:text-left">
-                <p className="text-2xl font-black text-slate-900 tracking-tight">Garantia Risco Zero (7 dias)</p>
-                <p className="text-slate-500 font-medium max-w-md">Use o material agora. Se não gostar, peça o reembolso total em um clique. Sem perguntas.</p>
-             </div>
+            <div className="bg-amber-500 p-5 rounded-3xl shadow-xl shadow-amber-200">
+              <ShieldCheck className="w-10 h-10 text-white" />
+            </div>
+            <div className="text-center md:text-left">
+              <p className="text-2xl font-black text-slate-900 tracking-tight">Garantia Risco Zero (7 dias)</p>
+              <p className="text-slate-500 font-medium max-w-md">Use o material agora. Se não gostar, peça o reembolso total em um clique. Sem perguntas.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -395,7 +431,7 @@ const App: React.FC = () => {
             </div>
           </div>
           <Button href={CHECKOUT_URL} className="px-16">
-             QUERO MINHA ANAMNESE CRISTÃ POR R$17
+            QUERO MINHA ANAMNESE CRISTÃ POR R$17
           </Button>
         </div>
       </section>
