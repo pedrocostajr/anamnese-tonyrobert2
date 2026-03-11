@@ -129,6 +129,21 @@ const App: React.FC = () => {
               Receba o Modelo Pronto de <span className="text-sky-700 italic">Anamnese Cristã</span> em PDF + Word com Perguntas Estratégicas e Prompt de IA
             </h1>
 
+            {/* Video Section - Between Headline and Subheadline */}
+            <div className="mt-8 relative group max-w-4xl mx-auto">
+              <div className="absolute -inset-4 bg-gradient-to-r from-sky-500 to-amber-500 rounded-[2.5rem] blur-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-700"></div>
+              <div className="relative overflow-hidden rounded-[2rem] border-[12px] border-white shadow-2xl bg-black aspect-video">
+                <iframe 
+                  src="https://player.vimeo.com/video/1172401623?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                  frameBorder="0" 
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  className="absolute top-0 left-0 w-full h-full"
+                  title="IMG_1203"
+                ></iframe>
+              </div>
+            </div>
+
             <p className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-medium">
               A estrutura completa para terapeutas e conselheiros que desejam realizar atendimentos profundos, organizados e biblicamente alinhados, economizando horas de preparação.
             </p>
